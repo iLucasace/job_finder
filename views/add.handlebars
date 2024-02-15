@@ -1,0 +1,35 @@
+<div id="add-form-container" class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="text-center">Promote your position by filling the form...</h1>
+      </div>
+      <div id="form-box" class="col-md-12">
+        <h2>Fill in the details as accurately as possible to find your Dev!</h2>
+        <form action="">
+          <div class="form-group">
+            <label for="title">Job Title:</label>
+            <input type="text" class="form-control" id="title" name="title" placeholder="Enter the job title." required>
+            <small id="titleHelp" class="form-text text-muted">The title is very important, be clear and objective.</small>
+          </div>
+          <div class="form-group">
+            <label for="description">Job Description:</label>
+            <textarea type="text" class="form-control" id="description" name="description" placeholder="Describe the developer's activities..." required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="company">Hiring Company:</label>
+            <input type="text" class="form-control" id="company" name="company" placeholder="Enter your company name." required>
+          </div>
+          <div class="form-group">
+            <label for="email">Contact E-mail:</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your contact e-mail address." required>
+          </div>
+          <div class="form-group">
+            <label for="salary">Salary Offered:</label>
+            <input type="text" class="form-control" id="salary" name="salary" placeholder="Enter the salary for the position." required>
+          </div>
+          <input type="hidden" name="new_job" value="1">
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
