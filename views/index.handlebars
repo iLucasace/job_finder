@@ -16,35 +16,16 @@
         <div class="col-md-12">
           <h2 id="job-list-title">Take a look at our featured positions...</h2>
           <ul id="job-list" class="list-group">
-            <li class="list-group-item new-job">
-              <img src="/img/company.svg" alt="Company">
-              <p>Company</p>
-              <h2>Job Title</h2>
-              <p>$2000,00</p>
-              <span class="new-job-label">New</span>
-              <a class="btn btn-primary">View Position</a>
-            </li>
-            <li class="list-group-item">
-              <img src="/img/company.svg" alt="Company">
-              <p>Company</p>
-              <h2>Job Title</h2>
-              <p>$2000,00</p>
-              <a class="btn btn-primary">View Position</a>
-            </li>
-            <li class="list-group-item">
-              <img src="/img/company.svg" alt="Company">
-              <p>Company</p>
-              <h2>Job Title</h2>
-              <p>$2000,00</p>
-              <a class="btn btn-primary">View Position</a>
-            </li>            
-            <li class="list-group-item">
-              <img src="/img/company.svg" alt="Company">
-              <p>Company</p>
-              <h2>Job Title</h2>
-              <p>$2000,00</p>
-              <a class="btn btn-primary">View Position</a>
-            </li>
+            {{#each jobs}}
+              <li class="list-group-item {{#if dataValues.new_job }} new-job {{/if}}">
+                <img src="/img/company.svg" alt="Company">
+                <p>{{dataValues.company}}</p>
+                <h2>{{dataValues.title}}</h2>
+                <p>{{dataValues.salary}}</p>
+                <span class="new-job-label">New</span>
+                <a class="btn btn-primary">View Position</a>
+              </li>
+            {{/each}}
           </ul>
         </div>
       </div>
